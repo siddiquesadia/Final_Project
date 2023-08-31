@@ -1,0 +1,525 @@
+// COMMON SCSS STARTS
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,span,p,ul,ol,a {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul,li{
+    list-style: none;
+}
+
+body{
+    font-family: $primaryFont;
+    color: $primaryTextColor;
+}
+
+// Md to XXL FOOTER SECTIONS STARTS HERE
+#mdFooter{
+    margin-top: 180px;
+    background-color: $primaryTextColor;
+    min-height: 400px;
+    // RESPONSIVE FOR EXTRA SMALL
+    @include custom_device(320px,767px){
+        display: none;
+    }
+
+    .footerHead{
+        height: 160px;
+        background-color: white;
+        box-shadow: 0px 0px 50px 0px rgba(21, 26, 50, 0.10);
+        transform: translateY(-50%);
+        //RESPONSIVE
+        @include md-device{
+            height: 120px;
+        }
+        .row{
+            .footHead{
+                padding: 45px 0;
+                // RESPONSIVE
+                @include md-device{
+                    padding: 30px 0;
+                }
+
+                ul{
+                    border-right: 4px solid #F1F1F1;
+                    padding: 0 15px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+    
+                    li{
+                        display: inline-block;
+                        padding-left: 10px;
+
+                        .list_icon{
+                            width: 70px;
+                            height: 70px;
+                            background-color: $primarycolor;
+                            border-radius: 50%;
+                            text-align: center;
+                            line-height: 70px;
+                            display: inline-block;  
+
+                            // RESPONSIVE
+
+                            @include md-device{
+                                width: 40px;
+                                height: 40px;
+                                line-height: 40px;
+                                img{
+                                    width: 30px;
+                                }
+                            }
+
+                        }
+    
+                        h5{
+                            font-size: 20px;
+                            font-weight: 600;
+                            // RESPONSIVE
+                            @include md-device{
+                                font-size: 14px;
+                            }
+                        }
+                        p{
+                            font-family: $secondaryFont;
+                            color: $paragraphColor;
+                            font-size: 16px;
+
+                            // RESPONSIVE
+                            @include md-device{
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer_menu{
+        border-bottom: 1px solid #E0E0E0;
+        padding-bottom: 76px;
+
+        .row{
+            .footerSocial{
+                a{
+                    width: 40px;
+                    height: 40px;
+                    line-height: 50px;
+                    text-align: center;
+                    display: inline-block;
+                    background-color: white;
+                    color: $paragraphColor;
+                    transition: 0.2s;
+                    margin-right: 10px;
+                    &:hover{
+                        color: white;
+                        background-color: $primarycolor;
+                    }
+                }    
+            }
+
+            .footerLogo{
+                text-align: center;
+            }
+
+            .footerPayment{
+                text-align: right;
+            }
+        }
+        
+    }
+
+    .footer_cntnt{
+        color: white;
+        margin-top: 70px;
+
+        .myAC, .support{
+            margin-bottom: 20px;
+            h4{
+                font-size: 24px;
+                font-weight: 700;
+                // RESPONSIVE
+                @include custom_device(991px,1399px){
+                    font-size: 16px;
+                }
+            }
+            ul{
+                margin-top: 22px;
+                
+                li{
+                    padding-bottom: 5px;
+                    a{
+                        color: white;
+                        font-family: $secondaryFont;
+                        font-size: 16px;
+
+                        // RESPONSIVE
+                        @include custom_device(991px,1399px){
+                            font-size: 10px;
+                        }
+                        &:hover{
+                            color:$primarycolor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .oppening{
+        margin-bottom: 20px;
+        h4{
+            font-size: 24px;
+            font-weight: 700;
+             // RESPONSIVE
+             @include custom_device(991px,1399px){
+                font-size: 16px;
+            }
+        }
+
+        .weeks, .time{
+            display: inline-block;
+            font-family: $secondaryFont;
+            font-size: 16px;
+            // RESPONSIVE
+            @include custom_device(991px,1399px){
+                font-size: 10px;
+            }
+            ul{
+                display: inline-block;
+                padding-right: 15px;
+                margin-top: 22px;
+                li{
+                    padding-bottom: 7px;
+                }
+            }
+        }
+    }
+
+    .contact{
+        margin-bottom: 20px;
+        h4{
+            font-size: 24px;
+            font-weight: 700;
+            // RESPONSIVE
+            @include custom_device(991px,1399px){
+                font-size: 16px;
+            }
+        }
+
+        ul{
+            display: inline-block;
+            font-family: $secondaryFont;
+            font-size: 16px;
+            margin-top: 22px;
+            // RESPONSIVE
+            @include custom_device(991px,1399px){
+                font-size: 10px;
+            }
+
+            li{
+                padding-top: 7px;
+                span{
+                    color: $primarycolor;
+                }
+                a{
+                    color: white;
+                    
+                }
+            }
+
+        }
+
+    }
+
+    .news{
+        margin-bottom: 20px;
+        h4{
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 22px;
+            // RESPONSIVE
+            @include custom_device(991px,1399px){
+                font-size: 16px;
+            }
+        }
+        p{
+            font-family: $secondaryFont;
+            font-size: 16px;
+            // RESPONSIVE
+            @include custom_device(991px,1399px){
+                font-size: 10px;
+            }
+        }
+
+        form{
+            margin-top: 23px;
+            position: relative;
+            input{
+                padding: 10px;
+                font-size: 16px;
+                font-weight: $secondaryFont;
+                // RESPONSIVE
+                @include custom_device(991px,1399px){
+                    font-size: 10px;
+                }
+            }
+
+            button{
+                padding: 10px 13px;
+                font-size: 18px;
+                font-weight: 600;
+                color: white;
+                background-color: $primarycolor;
+                position: absolute;
+                top: 0;
+                right:13px;
+                border: none;
+                // RESPONSIVE
+                @include custom_device(991px,1399px){
+                    font-size: 12px;
+                }
+                @include md-device{
+                    right: 43px;
+                }
+                
+            }
+        }
+    }
+}
+// Md to XXL FOOTER SECTIONS ENDS HERE
+
+// SM FOOTER SECTION STARTS HERE
+#smFooter{
+    margin-top: 100px;
+    padding-top: 15px;
+    background-color: $primaryTextColor;
+    min-height: 400px;
+    color: white;
+    .container{
+        .row{
+            .services{
+                text-align: left;
+                ul{
+                    display: inline-block;
+                    li{
+                        display: inline-block;
+                        padding: 5px;
+
+                        @include custom_device(0,430px){
+                            padding: 2px;
+                        }
+
+                            img{
+                                width: 25px;
+                                // RESPONSIVE
+                                @include custom_device(430px,575px){
+                                    width: 16px;
+                                    
+                                }
+
+                                @include custom_device(0,430px){
+                                    width: 10px;
+                                    
+                                }
+                            }
+                        
+                    }
+                }
+            }
+
+            .payment{
+                text-align: right;
+                img{
+                    width: 150px;
+                    // RESPONSIVE
+                    @include custom_device(430px,575px){
+                        width: 100px;
+                    }
+
+                    @include custom_device(0,430px){
+                        width: 60px;
+                    }
+                   
+                }
+
+            }
+
+            .logo{
+                img{
+                    width: 100px;
+                    // RESPONSIVE
+                    @include custom_device(430px,575px){
+                        width: 80px;
+                    }
+                    @include custom_device(0,430px){
+                        width: 50px;
+                    }
+                }
+                
+            }
+        }
+
+        .footer_cntnt{
+            color: white;
+            margin-top: 70px;
+    
+            .myAC, .support{
+                margin-bottom: 20px;
+                h4{
+                    font-size: 16px;
+                    font-weight: 700;
+                
+                }
+                ul{
+                    margin-top: 14px;
+                    
+                    li{
+                        padding-bottom: 5px;
+                        a{
+                            color: white;
+                            font-family: $secondaryFont;
+                            font-size: 12px;
+    
+                            &:hover{
+                                color:$primarycolor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .oppening{
+            margin-bottom: 20px;
+            h4{
+                font-size: 16px;
+                font-weight: 700;
+
+            }
+    
+            .weeks, .time{
+                display: inline-block;
+                font-family: $secondaryFont;
+                font-size: 12px;
+                @include custom_device(320px,400px){
+                    font-size: 10px;
+                }
+
+                ul{
+                    display: inline-block;
+                    padding-right: 15px;
+                    margin-top: 14px;
+                    li{
+                        padding-bottom: 7px;
+                    }
+                }
+            }
+        }
+    
+        .contact{
+            margin-bottom: 20px;
+            h4{
+                font-size: 16px;
+                font-weight: 700;
+               
+            }
+    
+            ul{
+                display: inline-block;
+                font-family: $secondaryFont;
+                font-size: 12px;
+                margin-top: 22px;
+    
+                li{
+                    padding-top: 7px;
+                    span{
+                        color: $primarycolor;
+                    }
+                    a{
+                        color: white;
+                        
+                    }
+                }
+    
+            }
+    
+        }
+    
+        .news{
+            margin-bottom: 20px;
+            h4{
+                font-size: 16px;
+                font-weight: 700;
+                margin-bottom: 22px;
+
+            }
+            p{
+                font-family: $secondaryFont;
+                font-size: 12px;
+            }
+    
+            form{
+                margin-top: 23px;
+                position: relative;
+                input{
+                    width: 300px;
+                    padding: 10px;
+                    font-size: 12px;
+                    font-weight: $secondaryFont;
+                    @include custom_device(320px, 575px){
+                        width: 150px;
+                    }
+                  
+                }
+    
+                button{
+                    
+                    padding: 10px 13px;
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: white;
+                    background-color: $primarycolor;
+                    position: absolute;
+                    top: 0;
+                    right:13%;
+                    border: none;
+                    
+                }
+            }
+        }
+    }
+
+}
+// SM FOOTER SECTION ENDS HERE
+
+// COPYRIGHT SECTION STARTS HERE
+#copyright{
+    text-align: center;
+    padding: 21px 0;
+    background-color: #32363e;
+    p{
+        font-size: 16px;
+        font-family: $secondaryFont;
+        color: white;
+        span{
+            color: $primarycolor;
+        }
+        @include custom_device(0px,575px){
+            font-size: 12px;
+        }
+    }
+}
+// COPYRIGHT SECTION ENDS HERE
+
+// COMMON SCSS ENDS

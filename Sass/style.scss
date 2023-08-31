@@ -1,0 +1,16 @@
+@import "./Helper/variable";
+@import "./Helper/Mixin/responsive";
+@import "./Helper/common";
+@import "./Menu/navbar";
+@import "./Helper/Mixin/homePageMixin";
+@import "./HomePage/home";
+@import "./AboutPage/about";
+@import "./ShopPage/shop";
+@import "./ShopPage/shopStyle1";
+@import "./ShopPage/compare";
+@import "./ShopPage/cart";
+@import"./ShopPage/checkout";
+
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Roboto:wght@400;700&display=swap');

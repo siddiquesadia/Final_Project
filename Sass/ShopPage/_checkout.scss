@@ -1,0 +1,415 @@
+// BANNNER SECTION STARTS HERE
+#shop_banner{
+   
+    .banner_cntnt{
+        @include sm-device{
+            height: 200px;
+        }
+        h2{
+            // RESPONSIVE
+            @include custom_device(575px,767px){
+                font-size: 38px;
+            }
+            @include custom_device(320px,575px){
+                font-size: 20px;
+            }
+        }
+    }
+}
+// BANNNER SECTION ENDS HERE
+
+// CHECKOUT INFO SECTION STARTS HERE
+#checkout{
+    margin-top: 100px;
+    // RESPONSIVE
+    @include custom_device(320px,575px){
+        margin-top: 60px;
+    }
+    .container{
+        form{
+            label{
+                display: block;
+                font-size: 16px;
+                // RESPONSIVE
+               @include custom_device(320px,575px){
+               font-size: 14px;
+               }
+            }
+            input{
+                width: 100%;
+                padding-left: 10px;
+                height: 50px;
+                margin-bottom: 20px;
+                // RESPONSIVE
+                @include custom_device(575px,767px){
+                   height: 30px;
+                }
+                
+               @include custom_device(320px,575px){
+                height: 25px;
+                margin-bottom: 10px;
+                }
+
+                &::placeholder{
+                    color: $paragraphColor;
+                    font-size: 14px;
+                    font-family: $secondaryFont;
+                    // RESPONSIVE
+                     @include custom_device(320px,575px){
+                     font-size: 12px;
+                    }
+                }
+                &:focus{
+                    outline-color: $primarycolor;
+                }
+            }
+            select{
+                width: 100%;
+                height: 50px;
+                padding-left: 10px;
+                margin-bottom: 20px;
+                // RESPONSIVE
+                @include custom_device(575px,767px){
+                    height: 30px;
+                 }
+                
+               @include custom_device(320px,575px){
+                    height: 25px;
+                    margin-bottom: 10px;
+                }
+
+                option{
+                    // RESPONSIVE
+                      @include custom_device(320px,575px){
+                      font-size: 12px;
+                }
+                }
+            }
+
+            h2{
+                font-size: 30px;
+                font-weight: 700;
+                margin-bottom: 20px;
+                 // RESPONSIVE
+                 @include custom_device(575px,767px){
+                   font-size: 20px;
+                }
+                @include custom_device(320px, 575px){
+                    font-size: 16px;
+                 }
+                
+            }
+
+            .coupon{
+                background-color: #F1F3F4;
+                padding: 17px 30px;
+                // RESPONSIVE
+                @include custom_device(320px,575px){
+                    font-size: 12px;
+                    padding: 5px 10px;
+                }
+                span{
+                   font-size: 16px;
+                   @include custom_device(320px,575px){
+                    font-size: 12px;
+                }
+                }
+                a{
+                    color: $primarycolor;
+                    text-decoration: underline;
+                    // RESPONSIVE
+                    @include custom_device(320px,575px){
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .billing{
+                
+                margin-top: 40px;
+
+                .f_name{
+                    display: inline-block;
+                    margin-right: 20px;
+                    // RESPONSIVE
+                    @include custom_device(0px,767px){
+                    display: block;
+                }
+                    input{
+                        width: 300px;
+                        // RESPONSIVE
+                        @include custom_device(0px,767px){
+                            width: 100%;
+                        }
+                       
+                    }
+                }
+                .l_name{
+                    display: inline-block;
+                    // RESPONSIVE
+                    @include custom_device(0px,767px){
+                        display: block;
+                    }
+                    input{
+                        width: 300px;
+                        padding-left: 10px;
+                        // RESPONSIVE
+                        @include custom_device(0px,767px){
+                            width: 100%;
+                        }
+                    }
+                }
+  
+            }
+            .additional{
+                margin-top: 40px;
+
+                #notes{
+                    padding: 20px 5px;
+                    font-size: 14px;
+                    font-family: $secondaryFont;
+                    color: #828282;
+                    width: 100%;
+                    height: 140px;
+
+                    // RESPONSIVE
+                    @include custom_device(320px,767px){
+                        height: 100px;
+                    }
+                    
+                    &:focus{
+                        outline-color: $primarycolor;
+                    }
+                }
+            }
+
+            .order{
+                table{
+                    thead{
+                        text-align: center;
+                        
+                        th{
+                            background-color: #F1F3F4;
+                            border: none;
+                            // RESPONISVE
+                            @include custom_device(767px,991px){
+                                font-size: 14px;
+                            }
+                            @include custom_device(575px,767px){
+                                font-size: 12px;
+                            }
+                            @include custom_device(320px,575px){
+                                font-size: 10px;
+                            }
+                        }
+                    }
+
+                    tbody{
+                        #firstRow{
+                            text-align: center;
+                            
+                           
+                            td{
+                                padding: 40px 0;
+                                vertical-align: middle;
+                
+                                // RESPONSIVE
+                                @include custom_device(767px,991px){
+                                    padding: 20px 5px;
+                                }
+                                @include custom_device(575px,767px){
+                                    padding: 15px 5px;
+                                }
+                                @include custom_device(320px,575px){
+                                    padding: 10px 5px;
+                                }
+                
+                                
+                                img{
+                                    width: 120px;
+                                    height: 120px;
+                                    // RESPONSIVE
+                                @include custom_device(767px,991px){
+                                    width: 100px;
+                                    height: 100px;
+                                }
+                                @include custom_device(575px,767px){
+                                    width: 80px;
+                                    height: 80px;
+                                }
+                                @include custom_device(320px,575px){
+                                    width: 50px;
+                                    height: 50px;
+                                }
+                                }
+                                p{
+                                    font-size: 16px;
+                                    color: $paragraphColor;
+                                    font-family: $secondaryFont;
+                                    // RESPONISVE
+                                    @include custom_device(767px,991px){
+                                       font-size: 14px;
+                                    }
+                                    @include custom_device(575px,767px){
+                                       font-size: 12px;
+                                    }
+                                    @include custom_device(350px,575px){
+                                        font-size: 10px;
+                                    }
+                                    @include custom_device(320px,350px){
+                                        font-size: 8px;
+                                    }
+                                }
+                              ul{
+                                button{
+                                    width: 24px;
+                                    height: 24px;
+                                    border: 1px solid #BDBDBD;
+                                    border-radius: 3px;
+                                    background-color: white;
+                                    text-align: center;
+                                    color:#BDBDBD;
+                                    font-size: 16px;
+                                    // RESPONISVE
+                                    @include custom_device(575px,767px){
+                                        width: 20px;
+                                        height: 20px;
+                                        font-size: 14px;
+                                    }
+                                    @include custom_device(320px,575px){
+                                       width: 15px;
+                                       height: 15px;
+                                       font-size: 10px;
+                                       display: block;
+                                      
+                                    }
+                
+                                    &:hover{
+                                        color: $paragraphColor;
+                                    }
+                
+                                }
+                                input{
+                                    width: 70px;
+                                    height: 30px;
+                                    text-align: center;
+                                    border: 1px solid #BDBDBD;
+                                    border-radius: 3px;
+                                    margin: 0 15px;
+                                    color: $paragraphColor;
+                                    font-size: 16px;
+                                    padding-left: 0;
+                
+                                    // RESPONISVE
+                                    @include custom_device(575px,767px){
+                                        width: 20px;
+                                        height: 20px;
+                                        font-size: 14px;
+                                        margin: 0 2px;
+                                    }
+                                    @include custom_device(320px,575px){
+                                        width: 15px;
+                                        height: 15px;
+                                        border: none;
+                                        font-size: 14px;
+                                        margin: 0 2px;
+                                    }
+                                    
+                
+                                   
+                                }
+                              }
+                             
+                            }
+                        }
+                        #secRow, #thirdRow{
+                            td{
+                                @include custom_device (320px,767px){
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            .agreement{
+                input{
+                    width: 12px;
+                    accent-color: $primarycolor;
+                    display: inline-block;
+                    margin: 0;
+                    height: 15px;
+                    // RESPONSIVE
+                @include custom_device(575px,767px){
+                    height: 11px;
+                 }
+                 @include custom_device(320px, 575px){
+                    height: 10px;
+                 }
+                    
+                }
+                h5{
+                    font-size: 20px;
+                    font-weight: 600;
+                    display: inline-block;
+                    margin-top: 15px;
+                    // RESPONSIVE
+                @include custom_device(575px,767px){
+                   font-size: 16px;
+                 }
+                 @include custom_device(320px, 575px){
+                    font-size: 14px;
+                 }
+                }
+                p{
+                    padding: 20px 12px;
+                    font-size: 16px;
+                    font-family: $secondaryFont;
+                    color: $paragraphColor;
+                    background-color: #F1F3F4;
+                    border: 1px solid #E0E0E0;
+                    margin: 10px 0;
+                    // RESPONSIVE
+                    @include custom_device(575px,767px){
+                    font-size: 12px;
+                    padding: 15px 8px;
+                  }
+                    @include custom_device(320px, 575px){
+                     font-size: 10px;
+                     padding: 10px 5px;
+                  }
+                }
+            }
+            p{
+                font-size: 16px;
+                font-family: $secondaryFont;
+                color: $paragraphColor; 
+                // RESPONSIVE
+                @include custom_device(575px,767px){
+                    font-size: 12px;
+                  }
+                  @include custom_device(320px, 575px){
+                    font-size: 10px;
+                 }
+            }
+
+            .submitBtn{
+                margin-top: 26px;
+                @include button($btn_type:color);
+                border: none;
+                color: white;
+                // RESPONSIVE
+                @include custom_device(575px,767px){
+                    padding: 10px 27px;
+                  }
+                  @include custom_device(320px,575px){
+                    font-size: 12px;
+                    padding: 5px 17px;
+                  }
+            }
+        }
+    }
+}
+// CHECKOUT INFO SECTION ENDS HERE

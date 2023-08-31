@@ -1,0 +1,39 @@
+// MIXIN FOR COMMON BUTTON STARTS
+
+// Button with icon and bg color
+@mixin button ($btn_type: icon_color, $color:white) {
+    @if $btn_type==icon_color {
+        background-color: $primarycolor;
+        padding: 13px 37px;
+    }
+
+    // Button with icon and without bg color
+    @else if $btn_type== icon_border{
+        border: 1px solid white;
+        padding: 13px 37px;
+    }
+
+    // Button with bg color only
+    @else if $btn_type==color{
+        background-color: $primarycolor;
+        padding: 13px 20px;
+    }
+
+    // Button with border only
+    @else {
+        border: 1px solid white;
+        padding: 13px 20px;
+    }
+}
+
+// MIXIN FOR COMMON BUTTON ENDS
+
+// MIXIN FOR COMMON HEADING STARTS
+
+@mixin heading() {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+
+// MIXIN FOR COMMON HEADING ENDS

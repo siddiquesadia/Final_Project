@@ -1,0 +1,495 @@
+// BANNNER SECTION STARTS HERE
+#shop_banner{
+   
+    .banner_cntnt{
+        @include sm-device{
+            height: 300px;
+        }
+        h2{
+            // RESPONSIVE
+            @include custom_device(575px,767px){
+                font-size: 38px;
+            }
+            @include custom_device(320px,575px){
+                font-size: 20px;
+            }
+        }
+    }
+}
+// BANNNER SECTION ENDS HERE
+
+// TABLE SECTION STARTS HERE
+#table{
+    margin-top: 100px;
+    @include custom_device(320px,575px){
+        margin-top: 60px;
+    }
+    .table{
+        thead{
+            td{
+               background-color: #F1F3F4;
+                form{
+                    display: inline-block;
+                    width: 95%;
+                    input{
+                    background-color: #F1F3F4;
+                    display: inline-block;
+                    width: 100%;
+                    height: 24px;
+                    border: none;
+                    padding-left: 5px;
+                    
+                    &:focus{
+                       outline:none;
+                    }
+                    }
+            
+                }
+                button{
+                background-color: #F1F3F4;
+                width: 3%;
+                line-height: 10px;
+                display: inline-block;
+                border: none;
+                border-left: 1px solid $primarycolor;
+                font-size: 18px;
+                color: $primarycolor;
+                padding: 5px 0;
+                }
+            }
+        }
+        tbody{
+            tr{
+                text-align: center;
+                
+                th{
+                    padding: 40px 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 200px;
+    
+                    //RESPONSIVE
+                    @include lg-device{
+                        padding: 25px 0;
+                    }
+    
+                    @include custom_device(767px,991px){
+                        padding: 20px 0;
+                    }
+    
+     
+                    h6{
+                        color: $primaryTextColor;
+                        font-size: 18px;
+                        font-weight: 600;
+                        //RESPONSIVE
+                        @include lg-device{
+                            font-size: 16px;
+                        }
+                        @include custom_device(767px,991px){
+                            font-size: 14px;
+                        }
+    
+                    }
+                }
+                td{
+                    padding: 40px 0;
+    
+                    //RESPONSIVE
+                    @include lg-device{
+                        padding: 22px 0;
+                    }
+                    @include custom_device(767px,991px){
+                        padding: 17px 0;
+                    }
+                   
+                    img{
+                        width: 200px;
+                        height: 200px;
+                        margin-bottom: 15px;
+    
+                        //RESPONSIVE
+                        @include lg-device{
+                            width: 130px;
+                            height: 130px;
+                        }
+    
+                        @include custom_device(767px,991px){
+                            width: 100px;
+                            height: 100px;
+                        }
+                        
+                    }
+                    h6{
+                        color: $primaryTextColor;
+                        font-size: 18px;
+                        font-weight: 600;
+                        //RESPONSIVE
+                        @include lg-device{
+                            font-size: 16px;
+                        }
+                        @include custom_device(767px,991px){
+                            font-size: 14px;
+                        }
+    
+                    }
+                    p{
+                        font-size: 16px;
+                        color:$paragraphColor;
+                        //RESPONSIVE
+                        @include lg-device{
+                            font-size: 14px;
+                        }
+                        @include custom_device(767px,991px){
+                            font-size: 12px;
+                        }
+                      
+                    }
+                }
+            }
+    
+            .remove{
+                th{
+                     // RESPONISVE
+                     @include custom_device(767px,991px){
+                        height: 60px;
+                      }
+                }
+                td{
+                    color: $primarycolor;
+                    cursor: pointer;
+                    
+                     // RESPONISVE
+                     @include custom_device(767px,991px){
+                        height: 60px;
+                      }
+                }
+            }
+    
+            .product{
+                th{
+               height: 320px;
+    
+               //RESPONSIVE
+               @include lg-device{
+                height: 220px;
+               }
+               @include custom_device(767px,991px){
+                height: 200px;
+            }
+                }
+                td{
+                    height: 320px;
+                    @include lg-device{
+                        height: 220px;
+                       }
+    
+                    @include custom_device(767px,991px){
+                        height: 200px;
+                    }
+                }
+            }
+            .description{
+              th{
+                height: 130px;
+    
+                // RESPONSIVE
+                @include custom_device(767px,991px){
+                        height: 110px;
+                    }
+              }
+    
+              td{
+                 P{
+                    // RESPONSIVE
+                     @include lg-device{
+                        padding: 0 5px;
+                    }
+                }
+              }
+              
+            }
+            .rating{
+                th{
+                     // RESPONSIVE
+                     @include custom_device(767px,991px){
+                       height: 80px;
+                    }
+                }
+                td{
+                    span{
+                        color:$primarycolor;
+                        display: inline-block;
+                        font-size: 14px;
+                    }
+                    p{
+                        display: inline-block;
+                        padding-left: 5px;
+                        
+                    // RESPONSIVE
+                     @include custom_device(767px,991px){
+                        display: block;
+                        padding-left: 0;
+                    }
+                    }
+                
+                }
+            }
+    
+            .stock{
+                th{
+                    // RESPONSIVE
+                    @include custom_device(767px,991px){
+                        height: 60px;
+                      }
+                }
+            
+                td{
+                    span{
+                        display: inline-block;
+                    }
+                    p{
+                        display: inline-block;
+                        padding-left: 5px;
+                    }
+                    // RESPONISVE
+                    @include custom_device(767px,991px){
+                        height: 60px;
+                      }
+                }
+            }
+    
+            .cart{
+                th{
+                    height: 130px;
+                    // RESPONSIVE
+                    @include lg-device{
+                        height: 90px;
+                    }
+                    
+                    @include custom_device(767px,991px){
+                      height: 80px;
+                    }
+                }
+                td{
+                   button{
+                    @include button($btn_type: color);
+                    border: none;
+                    
+                    // RESPONSIVE
+                    @include custom_device(767px,991px){
+                        padding: 10px 15px;
+                     }
+                    a{
+                        color: white;
+                        font-size: 18px;
+                        font-weight: 600px;
+                    // RESPONSIVE
+                     @include custom_device(767px,991px){
+                       font-size: 14px;
+                    }
+                    
+                    }
+                   }
+                }
+            }
+        }
+    }
+
+    // Table for sm device
+    .smTable{
+        thead{
+            td{
+               background-color: #F1F3F4;
+                form{
+                    display: inline-block;
+                    width: 90%;
+                    input{
+                    background-color: #F1F3F4;
+                    display: inline-block;
+                    width: 100%;
+                    height: 24px;
+                    border: none;
+                    padding-left: 5px;
+                    
+                    }
+    
+                    input[type=text]:focus {
+                        border: none;
+                      }
+            
+                }
+                button{
+                background-color: #F1F3F4;
+                width: 7%;
+                line-height: 10px;
+                display: inline-block;
+                border: none;
+                border-left: 1px solid $primarycolor;
+                font-size: 18px;
+                color: $primarycolor;
+                padding: 5px 0;
+                }
+            }
+        }
+        tbody{
+            tr{
+                text-align: center;
+                
+                th{
+                    padding: 15px 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100px;
+    
+     
+                    h6{
+                        color: $primaryTextColor;
+                        font-size: 12px;
+                        font-weight: 600;
+
+                        @include custom_device(0,575px){
+                            font-size: 10px;
+                        }
+    
+                    }
+                }
+                td{
+                    padding: 10px 0;
+                   
+                    img{
+                        width: 60px;
+                        height: 60px;
+                        margin-bottom: 10px;
+
+                        @include custom_device(0px,575px){
+                           width: 50px;
+                           height: 50px;
+                        }
+                        
+                    }
+                    h6{
+                        color: $primaryTextColor;
+                        font-size: 12px;
+                        font-weight: 600;
+                        @include custom_device(0,575px){
+                            font-size: 10px;
+                        } 
+    
+                    }
+                    p{
+                        font-size: 10px;
+                        color:$paragraphColor;
+                        @include custom_device(0,575px){
+                            font-size: 8px;
+                        }
+                      
+                    }
+                }
+            }
+        }
+
+        .remove{
+            th{
+                height: 50px;  
+            }
+            td{
+                color: $primarycolor;
+                cursor: pointer;
+                 height: 50px;
+                  
+            }
+        }
+        .product{
+            th{
+           height: 150px;
+            }
+            td{
+                height: 150px;
+            }
+        }
+        .description{
+            th{
+              height: 100px;
+
+            }
+  
+            td{
+                height:100px;
+
+               P{
+                 
+                padding: 0 5px;
+                  
+              }
+            }
+            
+          }
+
+          .rating{
+            th{
+                height: 60px;   
+            }
+            td{
+                span{
+                    color:$primarycolor;
+                    display: inline-block;
+                    font-size: 10px;
+                }
+                p{
+                    display: block;
+                }
+            
+            }
+        }
+
+        .stock{
+            th{
+                height: 50px;
+                  
+            }
+        
+            td{
+                height: 50px;
+                span{
+                    display: inline-block;
+                    font-size: 12px;
+                }
+                p{
+                    display: inline-block;
+                    padding-left: 5px;
+                }
+            }
+        }
+
+        .cart{
+            th{
+                height: 70px;
+            }
+            td{
+               button{
+                @include button($btn_type: color);
+                border: none;
+                padding: 7px 12px;
+                @include custom_device(0,575px){
+                    padding: 4px 2px;
+                }
+                 
+                h6{
+                 font-size: 12px;
+                color: white;
+                @include custom_device(0,575px){
+                    font-size: 8px;
+                }
+                }
+               }
+            }
+        }
+
+    }
+}
+// TABLE SECTION ENDS HERE

@@ -1,0 +1,47 @@
+
+// MIXIN FOR SM DEVICE
+
+@mixin sm-device(){
+    @media (320px<=width<=767px){
+        @content;
+    }
+}
+
+// MIXIN FOR MD DEVICE
+
+@mixin md-device(){
+    @media (768px<=width<=991px){
+        @content;
+    }
+}
+
+// MIXIN FOR SM AND MD DEVICES
+
+@mixin sm-md-device(){
+    @media (320px<=width<=991px){
+        @content;
+    }
+}
+
+// MIXIN FOR LG DEVICE
+
+@mixin lg-device(){
+    @media (992px<=width<=1200px){
+        @content;
+    }
+    }
+
+@mixin xlg-device(){
+    @media (1200px<=width<=1399px){
+        @content;
+    }
+}
+
+// MIXIN FOR CUSTOM DEVICE
+
+@mixin custom_device($min,$max){
+    @media ($min <=width<= $max){
+        @content;
+    }
+}
+    

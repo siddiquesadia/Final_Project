@@ -1,0 +1,363 @@
+// BANNER SECTION STARTS HERE
+#shop_banner{
+    min-height: 400px;
+    background-color: #3e424c;
+    color: white;
+
+    .banner_cntnt{
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h2{
+            font-size: 48px;
+            font-weight: 700;
+    
+        }
+        p{
+            font-size: 16px;
+            font-family: $secondaryFont;
+            a{
+                color: white;
+                &:hover{
+                    color: $primarycolor;
+                }
+            }
+        }
+
+    }
+}
+// BANNER SECTION ENDS HERE
+
+// POST SECTION STARTS HERE
+#post{
+    min-height: 400px;
+    margin-top: 100px;
+    .container{
+        position: relative;
+    }
+    .iconGroups{
+        
+       span{
+        color: white;
+        width: 40px;
+        height: 40px;
+        line-height: 48px;
+        background-color: $primaryTextColor;
+        text-align: center;
+        display: inline-block;
+        font-size: 20px;
+        transition: 0.3s;
+        // RESPONSIVE
+        @include custom_device(320px,575px){
+            width: 20px;
+            height: 20px;
+            font-size: 12px;
+            line-height: 28px;
+        }
+        &:hover{
+            background-color: $primarycolor;
+            cursor: pointer;
+        }
+       }
+       
+    }
+
+    .filter{
+        p{
+            font-size: 16px;
+            color: $paragraphColor;
+            // RESPONSIVE
+            @include custom_device(320px,767px){
+                font-size: 12px;
+            }
+        }
+        .bar{
+            margin-top: 10px;
+            width: 154px;
+            height: 2px;
+            background-color: #F1F1F1;
+            // RESPONSIVE
+        @include custom_device(320px,575px){
+            width: 100px;
+        }
+            .overlay_bar{
+                width: 110px;
+                height: 2px;
+                background-color: black;
+                // RESPONSIVE
+        @include custom_device(320px,575px){
+            width: 54px;
+        }
+            }
+        }
+       
+    }
+
+    .sorting{
+
+        select{
+            width: 312px;
+            height: 40px;
+            color: $paragraphColor;
+            font-family: $secondaryFont;
+            padding: 5px;
+            background-color: #F1F1F1;
+            border: none;
+            
+            
+            // RESPONSIVE
+            @include custom_device(320px,767px){
+                width: 120px;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .shopSlider{
+       
+        .shopCard{
+            margin-top: 30px;
+            width: 312px;
+            height: 360px;
+            padding: 10px;
+            // RESPONSIVE
+            @include custom_device(575px,767px){
+                width: 212px;
+                height: 260px;
+            }
+            @include custom_device(320px,575px){
+                width: 112px;
+                height: 160px;
+            }
+            .shopImg{
+                position: relative;
+                &:hover img{
+                    filter: brightness(60%);
+                }
+                &:hover .icon_group a{
+
+                    transform: translateX(0);
+                    transition-delay: calc(0.25s * var(--num));
+                    opacity: 1;
+                    visibility: visible;
+    
+                }
+                a{
+                    img{
+                        width: 100%;
+                        height: 360px;
+
+                        // RESPONSIVE
+                        @include custom_device(575px,767px){
+
+                            height: 260px;
+                        }
+                       // RESPONSIVE
+                       @include custom_device(320px,575px){
+                       
+                        height: 150px;
+                    } 
+                       
+                    }
+                }
+                .new{
+                    color: white;
+                    width: 80px;
+                    height: 26px;
+                    line-height: 30px;
+                    background-color: $primarycolor;
+                    text-align: center;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+
+                .icon_group{
+                   
+                    position: absolute;
+                    top: 50%;
+                    right: 20px;
+                    transform: translateY(-50%);
+                   
+    
+                    a{
+                        display:block;
+                        color: $secondaryColor;
+                        font-size: 18px;
+                        width: 36px;
+                        height: 36px;
+                        line-height: 44px;
+                        background-color: white;
+                        border-radius: 50%;
+                        text-align: center;
+                        margin-bottom: 15px;
+                        transition: 0.3s ease-in;
+                        transform: translateX(-70px);
+                        opacity: 0;
+                        visibility: hidden;
+                        
+    
+                        &:hover{
+                            background-color: $primarycolor;
+                            color: white;
+                            transition: 0.2s ease-in;
+                            
+                        } 
+                    }
+    
+                }
+            }
+
+            .shopText{
+                margin-top: 20px;
+                position: relative;
+                @include custom_device(320px,767px){
+                    position: static;
+                    text-align: center;
+                 }
+                h6{
+                    display: inline-block;
+                    font-size: 18px;
+                    font-weight: 600;
+                    // RESPONSIVE
+                    @include custom_device(320px,575px){
+                       font-size: 14px;
+                    }
+                }
+                span{
+                    display: inline-block;
+                    position: absolute;
+                    font-size: 10px;
+                    color: $primarycolor;
+                    right: 25px;
+                    @include custom_device(320px,767px){
+                        position: static;
+                        display: block;
+                     }
+                }
+                p{
+                    font-size: 16px;
+                    color: $paragraphColor;
+                    // RESPONSIVE
+                    @include custom_device(320px,575px){
+                        font-size: 12px;
+                     }
+                }
+                h5{
+                    position: absolute;
+                    right: 0;
+                    display: inline-block;
+                    @include custom_device(320px,767px){
+                       display: none;
+                     }
+                }
+
+            }
+        }
+
+        .slick-dots{
+            text-align: center;
+            margin-top: 30px;
+            .slick-active{
+                button{
+                    background-color: $primaryTextColor;
+                    color: white;
+                    border: none;
+                }
+            }
+            li{
+                display: inline-block;
+                padding: 10px 5px;
+                
+                button{
+                    width: 36px;
+                    height: 36px;
+                    font-size: 18px;
+                    font-family: $primaryFont;
+                    color: $paragraphColor;
+                    background-color: white;
+                    border: 1px solid #E0E0E0;
+                     // RESPONSIVE
+                     @include custom_device(320px,767px){
+                        width: 20px;
+                        height: 20px;
+                        font-size: 12px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .arrows{
+        color: $paragraphColor;
+        cursor: pointer;
+        // RESPONSIVE
+        @include custom_device(320px,575px){
+            display: none;
+           }
+        
+        .left{
+            position: absolute;
+            bottom: 15px;
+            left: 42%;
+            // RESPONSIVE
+            @include lg-device{
+                left: 33%;
+            }
+            // RESPONSIVE
+            @include md-device{
+                left: 23%;
+            }
+            // RESPONSIVE
+            @include custom_device(575px,767px){
+                font-size: 14px;
+                left: 23%;
+                bottom: 10px;
+             }
+            
+        }
+        .right{
+            position: absolute;
+            bottom: 15px;
+            right: 42%;
+            // RESPONSIVE
+            @include lg-device{
+                right: 33%;
+            }
+            // RESPONSIVE
+            @include md-device{
+                right: 23%;
+            }
+            @include custom_device(575px,767px){
+                font-size: 14px;
+                right: 23%;
+                bottom: 10px;
+             }
+        }
+    }
+
+}
+// POST SECTION ENDS HERE
+
+
+// COPYRIGHT SECTION STARTS HERE
+#copyright{
+    text-align: center;
+    padding: 21px 0;
+    background-color: #32363e;
+    p{
+        font-size: 16px;
+        font-family: $secondaryFont;
+        color: white;
+        span{
+            color: $primarycolor;
+        }
+        @include custom_device(0px,575px){
+            font-size: 12px;
+        }
+    }
+}
+// COPYRIGHT SECTION ENDS HERE

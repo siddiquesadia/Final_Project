@@ -1,0 +1,2012 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aytor E-commerce</title>
+    <!-- ALL CSS LINKS START -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/venobox.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <!-- ALL CSS LINKS END -->
+</head>
+<body>
+<!-- NAVBAR STARTS HERE -->
+<nav class="navbar navbar-expand-lg d-none d-lg-block">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./Images/Logo.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="myNav">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0 mainMenu">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./index.html" style="color: #FF6F61;">Home</a> 
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Shops
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./ShopPage.html">Shop Page</a></li>
+              <li><a class="dropdown-item" href="./ShopStyle1.html">Style Details</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="./Compare.html">Compare</a></li>
+              <li><a class="dropdown-item" href="./cart.html">Cart</a></li>
+              <li><a class="dropdown-item" href="./checkout.html">Checkout</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Pages
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./AboutPage.html">About Page</a></li>
+              <li><a class="dropdown-item" href="#">Another Page</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Features
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Blogs
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+
+        <div class="navIconBtn">
+          <!-- Button trigger search modal start -->
+          <span>
+            <iconify-icon icon="line-md:search" style="color: #151a32;"data-bs-toggle="modal" data-bs-target="#exampleModal"></iconify-icon>
+          </span>
+          <!-- Button trigger search modal end -->
+          <a href="#"><iconify-icon icon="iconoir:user" style="color: #151a32;"></iconify-icon></a>
+          <a href="#"><iconify-icon icon="ph:heart" style="color: #151a32;" ></iconify-icon></a>
+          <a href="./cart.html"><iconify-icon icon="akar-icons:shopping-bag" style="color: #151a32;"></iconify-icon>
+          <div class="cartNumber">
+            0
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+<!-- NAVBAR ENDS HERE -->
+
+<!-- SM TO MD DEVICE NAVBAR STARTS -->
+<div id="nav_sm_design" class="d-lg-none">
+  <div class="social d-md-none d-sm-block">
+    <a href="#"><iconify-icon icon="ri:facebook-fill"></iconify-icon></a>
+    <a href="#"><iconify-icon icon="mdi:twitter"></iconify-icon></a>
+    <a href="#"><iconify-icon icon="mdi:instagram"></iconify-icon></a>
+    <a href="#"><iconify-icon icon="formkit:pinterest"></iconify-icon></a>
+  </div>
+</div>
+<nav class="navbar nav_sm d-lg-none">
+   <div class="container">
+    <div class="row w-100 align-items-center">
+      <div class="col-3">
+        <a href="#"><iconify-icon icon="mingcute:menu-fill" style="color: #151a32 ; font-size: 24px;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></iconify-icon></a>
+      </div>
+      <div class="col-6 text-center">
+        <a href="#">
+          <img src="./Images/Logo.png" alt="">
+        </a>
+      </div>
+      <div class="col-3 text-end">
+        <div class="navIconBtn">
+          <a href="#"><iconify-icon icon="akar-icons:shopping-bag" style="color: #151a32;"></iconify-icon>
+          <div class="cartNumber">
+            0
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+   </div>
+</nav>
+
+<!-- OFFCANVAS -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    
+    <form action="#">
+      <span>
+        <iconify-icon icon="line-md:search" style="color: #151a32; font-size: 24px;"></iconify-icon>
+      </span>
+      <input type="text" placeholder="Search for products">
+
+    </form>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+
+    <!-- NAV TAB STARTS HERE-->
+    <div class="myNavTab">
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item col-6" role="presentation">
+          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-menu" type="button" role="tab" aria-controls="pills-menu" aria-selected="true">MENU</button>
+        </li>
+        <li class="nav-item col-6" role="presentation">
+          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-catagory" type="button" role="tab" aria-controls="pills-catagory" aria-selected="false">CATAGORIES</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active tabMenu" id="pills-menu" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+          <ul>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Profile</a></li>
+          </ul>
+        </div>
+        <div class="tab-pane fade" id="pills-catagory" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+          <div class="tab-pane fade show active tabMenu" id="pills-menu" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+            <ul>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Pages</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Profile</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- NAV TAB ENDS HERE-->
+  </div>
+</div>
+<!-- OFFCANVAS END -->
+<!-- SM TO MD DEVICE NAVBAR ENDS -->
+
+<!-- MODAL FOR SEARCH ICON STARTS -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Search for any product</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="#">
+          <input type="text" placeholder="keywords here..">
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary closeBtn" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary searchBtn">Search</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- MODAL FOR SEARCH ICON ENDS -->
+
+<!-- HOME PAGE STARTS HERE -->
+<!--BANNER SECTION STARTS HERE -->
+
+<section id="banner">
+  <div class="banner_slide" style="background-image: url(./Images/Banner.jpg);">
+    <div class="container">
+      <div class="row align-items-center h-100">
+        <div class="banner_cntnt col-lg-5">
+          <h6>Mega Sale</h6>
+          <h2>Up To 35% Off</h2>
+          <p>Objectively incubate enabled innovation through leveraged mindshare. Competently.</p>
+          <a href="#">Shop Now <span> <iconify-icon icon="ph:arrow-right"></iconify-icon> </span> </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="banner_slide" style="background-image: url(./Images/banner2.jpg);">
+    <div class="container">
+      <div class="row align-items-center h-100">
+        <div class="banner_cntnt col-lg-5">
+          <h6>Mega Sale</h6>
+          <h2>Up To 35% Off</h2>
+          <p>Objectively incubate enabled innovation through leveraged mindshare. Competently.</p>
+          <a href="#">Shop Now <span> <iconify-icon icon="ph:arrow-right"></iconify-icon> </span> </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="banner_slide" style="background-image: url(./Images/Banner3.jpg);">
+    <div class="container">
+      <div class="row align-items-center h-100">
+        <div class="banner_cntnt col-lg-5">
+          <h6>Mega Sale</h6>
+          <h2>Up To 35% Off</h2>
+          <p>Objectively incubate enabled innovation through leveraged mindshare. Competently.</p>
+          <a href="#">Shop Now <span> <iconify-icon icon="ph:arrow-right"></iconify-icon> </span> </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="banner_slide" style="background-image: url(./Images/banner4.jpg);">
+    <div class="container">
+      <div class="row align-items-center h-100">
+        <div class="banner_cntnt col-lg-5">
+          <h6>Mega Sale</h6>
+          <h2>Up To 35% Off</h2>
+          <p>Objectively incubate enabled innovation through leveraged mindshare. Competently.</p>
+          <a href="#">Shop Now <span> <iconify-icon icon="ph:arrow-right"></iconify-icon> </span> </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+            
+        </div>
+    </div>
+</section>
+
+<!--BANNER SECTION ENDS HERE -->
+
+<!-- BEAUTY SECTION STARTS HERE -->
+<section id="beauty">
+    <div class="container beauty_cntnt">
+
+      <div class="row">
+        <div class="left col-lg-5">
+
+          <div class="left_up mb-4">
+            <img src="./Images/beautyImg_left_up.jpg" alt="">
+            <div class="left_up_overlay">
+              <h3>Beauty Cream</h3>
+              <a href="#">Shop Now <span><iconify-icon icon="ph:arrow-right"></iconify-icon></span></a>
+            </div>
+          </div>
+          <div class="left_down">
+            <img src="./Images/beautyImg_left_down.jpg" alt="">
+            <div class="left_down_overlay">
+              <h3>Beauty Cream</h3>
+              <a href="#">Shop Now <span><iconify-icon icon="ph:arrow-right"></iconify-icon></span></a>
+            </div>
+          </div>
+
+        </div>
+        <div class="right col-lg-7 ">
+
+          <img src="./Images/beautyImg_right.jpg" alt="">
+
+            <div class="right_overlay">
+              <h3>Beauty Soap</h3>
+              <a href="#">Shop Now <span><iconify-icon icon="ph:arrow-right"></iconify-icon></span></a>
+            </div>
+          </div>
+          
+        
+        </div>
+      </div>
+    </div>
+</section>
+
+<!--BEAUTY SECTION ENDS HERE -->
+
+<!-- NEW ARRIVAL SECTION STARTS HERE -->
+
+<section id="new_arrival">
+   <h3>New Arrival Products</h3>
+    <div class="container">
+        <div class="new_arrival_slider">
+          <div class="new_arrival_card ">
+
+            <div class="new_arrival_img">
+              <a href="#"><img src="./Images/Lotion.jpg" alt=""></a>
+              <div class="sale">
+                <span>-45%</span>
+              </div>
+              <div class="icon_group">
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Add to cart" href="#" style="--num:0">
+                  <iconify-icon icon="la:cart-plus"></iconify-icon>
+                </a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Add to wish list" href="#" style="--num:1">
+                  <iconify-icon icon="mdi:heart"></iconify-icon>
+                </a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Open quick view" href="#" style="--num:2">
+                  <iconify-icon icon="mdi:eye"></iconify-icon>
+                </a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Show rating" href="#" style="--num:3">
+                  <iconify-icon icon="dashicons:chart-bar"></iconify-icon>
+                </a>
+
+              </div>
+            </div>
+            <div class="new_arrival_text">
+              <p>$150.65</p>
+              <h4>Lotion Shower Gel</h4>
+              <span><iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon></span>
+
+            </div>
+
+          </div>
+
+          <div class="new_arrival_card ">
+
+            <div class="new_arrival_img">
+              <a href="#"><img src="./Images/Argan Cream.jpg" alt=""></a>
+              <div class="sale" style="top:7px;">
+                <span>Sale</span>
+              </div>
+              <div class="icon_group">
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Add to cart" href="#" style="--num:0">
+                  <iconify-icon icon="la:cart-plus"></iconify-icon>
+                </a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Add to wish list" href="#" style="--num:1">
+                  <iconify-icon icon="mdi:heart"></iconify-icon>
+                </a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Open quick view" href="#" style="--num:2">
+                  <iconify-icon icon="mdi:eye"></iconify-icon>
+                </a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Show rating" href="#" style="--num:3">
+                  <iconify-icon icon="dashicons:chart-bar"></iconify-icon>
+                </a>
+
+              </div>
+            </div>
+            <div class="new_arrival_text">
+              <p>$250.65</p>
+              <h4>Argan Cream Body Butter</h4>
+              <span><iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon></span>
+
+            </div>
+
+          </div>
+
+          <div class="new_arrival_card ">
+
+            <div class="new_arrival_img">
+              <a href="#"><img src="./Images/Face Powder.jpg" alt=""></a>
+              <div class="icon_group">
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Add to cart" href="#" style="--num:0">
+                  <iconify-icon icon="la:cart-plus"></iconify-icon>
+                </a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Add to wish list" href="#" style="--num:1">
+                  <iconify-icon icon="mdi:heart"></iconify-icon>
+                </a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Open quick view" href="#" style="--num:2">
+                  <iconify-icon icon="mdi:eye"></iconify-icon>
+                </a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Show rating" href="#" style="--num:3">
+                  <iconify-icon icon="dashicons:chart-bar"></iconify-icon>
+                </a>
+
+              </div>
+            </div>
+            <div class="new_arrival_text">
+              <p>$175.65</p>
+              <h4>Compact Face Powder</h4>
+              <span><iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon></span>
+
+            </div>
+
+          </div>
+
+          <div class="new_arrival_card ">
+
+            <div class="new_arrival_img">
+              <a href="#"><img src="./Images/gel nails.png" alt=""></a>
+              <div class="sale">
+                <span>New</span>
+              </div>
+              <div class="icon_group">
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Add to cart" href="#" style="--num:0">
+                  <iconify-icon icon="la:cart-plus"></iconify-icon>
+                </a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Add to wish list" href="#" style="--num:1">
+                  <iconify-icon icon="mdi:heart"></iconify-icon>
+                </a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Open quick view" href="#" style="--num:2">
+                  <iconify-icon icon="mdi:eye"></iconify-icon>
+                </a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Show rating" href="#" style="--num:3">
+                  <iconify-icon icon="dashicons:chart-bar"></iconify-icon>
+                </a>
+
+              </div>
+            </div>
+            <div class="new_arrival_text">
+              <p>$75.65</p>
+              <h4>Manicure Gel nails, makeup</h4>
+              <span><iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon></span>
+
+            </div>
+
+          </div>
+
+          <div class="new_arrival_card ">
+
+            <div class="new_arrival_img">
+              <a href="#"><img src="./Images/Lotion.jpg" alt=""></a>
+              <div class="sale">
+                <span>-45%</span>
+              </div>
+              <div class="icon_group">
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Add to cart" href="#" style="--num:0">
+                  <iconify-icon icon="la:cart-plus"></iconify-icon>
+                </a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Add to wish list" href="#" style="--num:1">
+                  <iconify-icon icon="mdi:heart"></iconify-icon>
+                </a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Open quick view" href="#" style="--num:2">
+                  <iconify-icon icon="mdi:eye"></iconify-icon>
+                </a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Show rating" href="#" style="--num:3">
+                  <iconify-icon icon="dashicons:chart-bar"></iconify-icon>
+                </a>
+
+              </div>
+            </div>
+            <div class="new_arrival_text">
+              <p>$150.65</p>
+              <h4>Lotion Shower Gel</h4>
+              <span><iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon></span>
+
+            </div>
+
+          </div>
+
+          <div class="new_arrival_card ">
+
+            <div class="new_arrival_img">
+              <a href="#"><img src="./Images/Argan Cream.jpg" alt=""></a>
+              <div class="sale" style="top:7px;">
+                <span>Sale</span>
+              </div>
+              <div class="icon_group">
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Add to cart" href="#" style="--num:0">
+                  <iconify-icon icon="la:cart-plus"></iconify-icon>
+                </a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Add to wish list" href="#" style="--num:1">
+                  <iconify-icon icon="mdi:heart"></iconify-icon>
+                </a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Open quick view" href="#" style="--num:2">
+                  <iconify-icon icon="mdi:eye"></iconify-icon>
+                </a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Show rating" href="#" style="--num:3">
+                  <iconify-icon icon="dashicons:chart-bar"></iconify-icon>
+                </a>
+
+              </div>
+            </div>
+            <div class="new_arrival_text">
+              <p>$250.65</p>
+              <h4>Argan Cream Body Butter</h4>
+              <span><iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon></span>
+
+            </div>
+
+          </div>
+
+          <div class="new_arrival_card ">
+
+            <div class="new_arrival_img">
+              <a href="#"><img src="./Images/Face Powder.jpg" alt=""></a>
+              <div class="icon_group">
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Add to cart" href="#" style="--num:0">
+                  <iconify-icon icon="la:cart-plus"></iconify-icon>
+                </a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Add to wish list" href="#" style="--num:1">
+                  <iconify-icon icon="mdi:heart"></iconify-icon>
+                </a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Open quick view" href="#" style="--num:2">
+                  <iconify-icon icon="mdi:eye"></iconify-icon>
+                </a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Show rating" href="#" style="--num:3">
+                  <iconify-icon icon="dashicons:chart-bar"></iconify-icon>
+                </a>
+
+              </div>
+            </div>
+            <div class="new_arrival_text">
+              <p>$175.65</p>
+              <h4>Compact Face Powder</h4>
+              <span><iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon></span>
+
+            </div>
+
+          </div>
+
+          <div class="new_arrival_card">
+
+            <div class="new_arrival_img">
+              <a href="#"><img src="./Images/gel nails.png" alt=""></a>
+              <div class="sale">
+                <span>New</span>
+              </div>
+              <div class="icon_group">
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Add to cart" href="#" style="--num:0">
+                  <iconify-icon icon="la:cart-plus"></iconify-icon>
+                </a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Add to wish list" href="#" style="--num:1">
+                  <iconify-icon icon="mdi:heart"></iconify-icon>
+                </a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Open quick view" href="#" style="--num:2">
+                  <iconify-icon icon="mdi:eye"></iconify-icon>
+                </a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Show rating" href="#" style="--num:3">
+                  <iconify-icon icon="dashicons:chart-bar"></iconify-icon>
+                </a>
+
+              </div>
+            </div>
+            <div class="new_arrival_text">
+              <p>$75.65</p>
+              <h4>Manicure Gel nails, makeup</h4>
+              <span><iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon></span>
+
+            </div>
+
+          </div>
+            
+        </div>
+
+        <!-- ARROW BUTTON FOR SLIDER START -->
+        <div class="arrows">
+          <div class="left_arrow">
+            <iconify-icon icon="material-symbols:keyboard-arrow-left" style="color: white;"></iconify-icon>
+          </div>
+          <div class="right_arrow">
+            <iconify-icon icon="material-symbols:keyboard-arrow-left" style="color: white;" flip="horizontal"></iconify-icon>
+          </div>
+        </div>
+        <!-- ARROW BUTTON FOR SLIDER END -->
+    </div>
+</section>
+
+<!-- NEW ARRIVAL SECTION ENDS HERE -->
+
+<!-- SECOND BANNER SECTION STARTS HERE -->
+<section id="second_banner" style="background-image: url(./Images/Second_Banner\ .png);">
+  <div class="container">
+    <div class="second_banner_text col-lg-5">
+      <h3>Get Up To 35% Off all <br> Bestzzzzzzzzzzzz Spa Cosmetics Cream</h3>
+      <p>Holisticly maximize interoperable action items for effective<br> e-business. Globally impact enterprise-wide niche markets through dynamic.</p>
+      <a href="#">Shop Now <span> <iconify-icon icon="ph:arrow-right"></iconify-icon> </span> </a>
+    </div>
+  </div>
+</section>
+<!-- SECOND BANNER SECTION ENDS HERE -->
+
+<!-- BEST SELLER SECTION STARTS HERE -->
+
+<!-- For Md to XXL device starts here -->
+<section id="bestSeller" class="d-none d-md-block">
+  <h3>Best Seller Products</h3>
+  <div class="container">
+    <div class="row">
+      <div class="new_arrival_card col-lg-3 col-md-6">
+        <div class="new_arrival_img">
+          <a href="#"><img src="./Images/Seller Lotion.png" alt=""></a>
+          <div class="sale">
+            <span>-45%</span>
+          </div>
+          <div class="icon_group">
+            <a data-bs-toggle="tooltip" data-bs-placement="left"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Add to cart" href="#" style="--num:0">
+              <iconify-icon icon="la:cart-plus"></iconify-icon>
+            </a>
+            <a data-bs-toggle="tooltip" data-bs-placement="left"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Add to wish list" href="#" style="--num:1">
+              <iconify-icon icon="mdi:heart"></iconify-icon>
+            </a>
+            <a data-bs-toggle="tooltip" data-bs-placement="left"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Open quick view" href="#" style="--num:2">
+              <iconify-icon icon="mdi:eye"></iconify-icon>
+            </a>
+            <a data-bs-toggle="tooltip" data-bs-placement="left"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Show rating" href="#" style="--num:3">
+              <iconify-icon icon="dashicons:chart-bar"></iconify-icon>
+            </a>
+          </div>
+        </div>
+        <div class="new_arrival_text">
+          <p>$150.65</p>
+          <h4>Lotion Shower Gel</h4>
+          <span><iconify-icon icon="material-symbols:star"></iconify-icon>
+            <iconify-icon icon="material-symbols:star"></iconify-icon>
+            <iconify-icon icon="material-symbols:star"></iconify-icon>
+            <iconify-icon icon="material-symbols:star"></iconify-icon>
+            <iconify-icon icon="material-symbols:star"></iconify-icon></span>
+        </div>
+      </div>
+      <div class="new_arrival_card col-lg-3 col-md-6 ">
+
+        <div class="new_arrival_img">
+          <a href="#"><img src="./Images/Seller Cream.png" alt=""></a>
+          <div class="sale" style="top:7px;">
+            <span>Sale</span>
+          </div>
+          <div class="icon_group">
+            <a data-bs-toggle="tooltip" data-bs-placement="left"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Add to cart" href="#" style="--num:0">
+              <iconify-icon icon="la:cart-plus"></iconify-icon>
+            </a>
+            <a data-bs-toggle="tooltip" data-bs-placement="left"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Add to wish list" href="#" style="--num:1">
+              <iconify-icon icon="mdi:heart"></iconify-icon>
+            </a>
+            <a data-bs-toggle="tooltip" data-bs-placement="left"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Open quick view" href="#" style="--num:2">
+              <iconify-icon icon="mdi:eye"></iconify-icon>
+            </a>
+            <a data-bs-toggle="tooltip" data-bs-placement="left"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Show rating" href="#" style="--num:3">
+              <iconify-icon icon="dashicons:chart-bar"></iconify-icon>
+            </a>
+
+          </div>
+        </div>
+        <div class="new_arrival_text">
+          <p>$250.65</p>
+          <h4>Argan Cream Body Butter</h4>
+          <span><iconify-icon icon="material-symbols:star"></iconify-icon>
+            <iconify-icon icon="material-symbols:star"></iconify-icon>
+            <iconify-icon icon="material-symbols:star"></iconify-icon>
+            <iconify-icon icon="material-symbols:star"></iconify-icon>
+            <iconify-icon icon="material-symbols:star"></iconify-icon></span>
+
+        </div>
+
+      </div>
+
+      <div class="new_arrival_card col-lg-3 col-md-6 ">
+
+        <div class="new_arrival_img">
+          <a href="#"><img src="./Images/Seller face powder.png" alt=""></a>
+          <div class="icon_group">
+            <a data-bs-toggle="tooltip" data-bs-placement="left"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Add to cart" href="#" style="--num:0">
+              <iconify-icon icon="la:cart-plus"></iconify-icon>
+            </a>
+            <a data-bs-toggle="tooltip" data-bs-placement="left"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Add to wish list" href="#" style="--num:1">
+              <iconify-icon icon="mdi:heart"></iconify-icon>
+            </a>
+            <a data-bs-toggle="tooltip" data-bs-placement="left"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Open quick view" href="#" style="--num:2">
+              <iconify-icon icon="mdi:eye"></iconify-icon>
+            </a>
+            <a data-bs-toggle="tooltip" data-bs-placement="left"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Show rating" href="#" style="--num:3">
+              <iconify-icon icon="dashicons:chart-bar"></iconify-icon>
+            </a>
+
+          </div>
+        </div>
+        <div class="new_arrival_text">
+          <p>$175.65</p>
+          <h4>Compact Face Powder</h4>
+          <span><iconify-icon icon="material-symbols:star"></iconify-icon>
+            <iconify-icon icon="material-symbols:star"></iconify-icon>
+            <iconify-icon icon="material-symbols:star"></iconify-icon>
+            <iconify-icon icon="material-symbols:star"></iconify-icon>
+            <iconify-icon icon="material-symbols:star"></iconify-icon></span>
+
+        </div>
+
+      </div>
+
+      <div class="new_arrival_card col-lg-3 col-md-6 ">
+
+        <div class="new_arrival_img">
+          <a href="#"><img src="./Images/Seller nail.png" alt=""></a>
+          <div class="sale">
+            <span>New</span>
+          </div>
+          <div class="icon_group">
+            <a data-bs-toggle="tooltip" data-bs-placement="left"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Add to cart" href="#" style="--num:0">
+              <iconify-icon icon="la:cart-plus"></iconify-icon>
+            </a>
+            <a data-bs-toggle="tooltip" data-bs-placement="left"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Add to wish list" href="#" style="--num:1">
+              <iconify-icon icon="mdi:heart"></iconify-icon>
+            </a>
+            <a data-bs-toggle="tooltip" data-bs-placement="left"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Open quick view" href="#" style="--num:2">
+              <iconify-icon icon="mdi:eye"></iconify-icon>
+            </a>
+            <a data-bs-toggle="tooltip" data-bs-placement="left"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Show rating" href="#" style="--num:3">
+              <iconify-icon icon="dashicons:chart-bar"></iconify-icon>
+            </a>
+
+          </div>
+        </div>
+        <div class="new_arrival_text">
+          <p>$75.65</p>
+          <h4>Manicure Gel nails, makeup</h4>
+          <span><iconify-icon icon="material-symbols:star"></iconify-icon>
+            <iconify-icon icon="material-symbols:star"></iconify-icon>
+            <iconify-icon icon="material-symbols:star"></iconify-icon>
+            <iconify-icon icon="material-symbols:star"></iconify-icon>
+            <iconify-icon icon="material-symbols:star"></iconify-icon></span>
+
+        </div>
+
+      </div>
+      <div class="new_arrival_card col-lg-3 col-md-6">
+        <div class="new_arrival_img">
+          <a href="#"><img src="./Images/Perfume.png" alt=""></a>
+          <div class="sale">
+            <span>-45%</span>
+          </div>
+          <div class="icon_group">
+            <a data-bs-toggle="tooltip" data-bs-placement="left"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Add to cart" href="#" style="--num:0">
+              <iconify-icon icon="la:cart-plus"></iconify-icon>
+            </a>
+            <a data-bs-toggle="tooltip" data-bs-placement="left"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Add to wish list" href="#" style="--num:1">
+              <iconify-icon icon="mdi:heart"></iconify-icon>
+            </a>
+            <a data-bs-toggle="tooltip" data-bs-placement="left"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Open quick view" href="#" style="--num:2">
+              <iconify-icon icon="mdi:eye"></iconify-icon>
+            </a>
+            <a data-bs-toggle="tooltip" data-bs-placement="left"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Show rating" href="#" style="--num:3">
+              <iconify-icon icon="dashicons:chart-bar"></iconify-icon>
+            </a>
+          </div>
+        </div>
+        <div class="new_arrival_text">
+          <p>$350.65</p>
+          <h4>Perfumes s, Orlane Paris</h4>
+          <span><iconify-icon icon="material-symbols:star"></iconify-icon>
+            <iconify-icon icon="material-symbols:star"></iconify-icon>
+            <iconify-icon icon="material-symbols:star"></iconify-icon>
+            <iconify-icon icon="material-symbols:star"></iconify-icon>
+            <iconify-icon icon="material-symbols:star"></iconify-icon></span>
+        </div>
+      </div>
+      <div class="new_arrival_card col-lg-3 col-md-6 ">
+
+        <div class="new_arrival_img">
+          <a href="#"><img src="./Images/Cleanser.png" alt=""></a>
+          <div class="sale" style="top:7px;">
+            <span>Sale</span>
+          </div>
+          <div class="icon_group">
+            <a data-bs-toggle="tooltip" data-bs-placement="left"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Add to cart" href="#" style="--num:0">
+              <iconify-icon icon="la:cart-plus"></iconify-icon>
+            </a>
+            <a data-bs-toggle="tooltip" data-bs-placement="left"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Add to wish list" href="#" style="--num:1">
+              <iconify-icon icon="mdi:heart"></iconify-icon>
+            </a>
+            <a data-bs-toggle="tooltip" data-bs-placement="left"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Open quick view" href="#" style="--num:2">
+              <iconify-icon icon="mdi:eye"></iconify-icon>
+            </a>
+            <a data-bs-toggle="tooltip" data-bs-placement="left"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Show rating" href="#" style="--num:3">
+              <iconify-icon icon="dashicons:chart-bar"></iconify-icon>
+            </a>
+
+          </div>
+        </div>
+        <div class="new_arrival_text">
+          <p>$460.65</p>
+          <h4>Natural skin care Cleanser</h4>
+          <span><iconify-icon icon="material-symbols:star"></iconify-icon>
+            <iconify-icon icon="material-symbols:star"></iconify-icon>
+            <iconify-icon icon="material-symbols:star"></iconify-icon>
+            <iconify-icon icon="material-symbols:star"></iconify-icon>
+            <iconify-icon icon="material-symbols:star"></iconify-icon></span>
+
+        </div>
+
+      </div>
+
+      <div class="new_arrival_card col-lg-3 col-md-6 ">
+
+        <div class="new_arrival_img">
+          <a href="#"><img src="./Images/Conditioner.png" alt=""></a>
+          <div class="icon_group">
+            <a data-bs-toggle="tooltip" data-bs-placement="left"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Add to cart" href="#" style="--num:0">
+              <iconify-icon icon="la:cart-plus"></iconify-icon>
+            </a>
+            <a data-bs-toggle="tooltip" data-bs-placement="left"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Add to wish list" href="#" style="--num:1">
+              <iconify-icon icon="mdi:heart"></iconify-icon>
+            </a>
+            <a data-bs-toggle="tooltip" data-bs-placement="left"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Open quick view" href="#" style="--num:2">
+              <iconify-icon icon="mdi:eye"></iconify-icon>
+            </a>
+            <a data-bs-toggle="tooltip" data-bs-placement="left"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Show rating" href="#" style="--num:3">
+              <iconify-icon icon="dashicons:chart-bar"></iconify-icon>
+            </a>
+
+          </div>
+        </div>
+        <div class="new_arrival_text">
+          <p>$320.65</p>
+          <h4>Argan oil Hair conditioner</h4>
+          <span><iconify-icon icon="material-symbols:star"></iconify-icon>
+            <iconify-icon icon="material-symbols:star"></iconify-icon>
+            <iconify-icon icon="material-symbols:star"></iconify-icon>
+            <iconify-icon icon="material-symbols:star"></iconify-icon>
+            <iconify-icon icon="material-symbols:star"></iconify-icon></span>
+
+        </div>
+
+      </div>
+
+      <div class="new_arrival_card col-lg-3 col-md-6 ">
+
+        <div class="new_arrival_img">
+          <a href="#"><img src="./Images/Lip balm.png" alt=""></a>
+          <div class="sale">
+            <span>New</span>
+          </div>
+          <div class="icon_group">
+            <a data-bs-toggle="tooltip" data-bs-placement="left"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Add to cart" href="#" style="--num:0">
+              <iconify-icon icon="la:cart-plus"></iconify-icon>
+            </a>
+            <a data-bs-toggle="tooltip" data-bs-placement="left"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Add to wish list" href="#" style="--num:1">
+              <iconify-icon icon="mdi:heart"></iconify-icon>
+            </a>
+            <a data-bs-toggle="tooltip" data-bs-placement="left"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Open quick view" href="#" style="--num:2">
+              <iconify-icon icon="mdi:eye"></iconify-icon>
+            </a>
+            <a data-bs-toggle="tooltip" data-bs-placement="left"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Show rating" href="#" style="--num:3">
+              <iconify-icon icon="dashicons:chart-bar"></iconify-icon>
+            </a>
+
+          </div>
+        </div>
+        <div class="new_arrival_text">
+          <p>$185.65</p>
+          <h4>Lip balm Oriflame Cream</h4>
+          <span><iconify-icon icon="material-symbols:star"></iconify-icon>
+            <iconify-icon icon="material-symbols:star"></iconify-icon>
+            <iconify-icon icon="material-symbols:star"></iconify-icon>
+            <iconify-icon icon="material-symbols:star"></iconify-icon>
+            <iconify-icon icon="material-symbols:star"></iconify-icon></span>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="shopBtn">
+      <a href="#">See All Products <span> <iconify-icon icon="ph:arrow-right"></iconify-icon> </span> </a>
+    </div>
+  </div>
+</section>
+<!-- For Md to XXL device ends here -->
+
+<!-- For sm device starts here -->
+<section id="sm_bestSeller" class="d-sm-block d-md-none">
+  <h3>Best Seller Products</h3>
+  <div class="container">
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Lotion Shower gel
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div class="new_arrival_card">
+              <div class="new_arrival_img">
+                <a href="#"><img src="./Images/Seller Lotion.png" alt=""></a>
+                <div class="sale">
+                  <span>-45%</span>
+                </div>
+                <div class="icon_group">
+                  <a data-bs-toggle="tooltip" data-bs-placement="left"
+                  data-bs-custom-class="custom-tooltip"
+                  data-bs-title="Add to cart" href="#" style="--num:0">
+                    <iconify-icon icon="la:cart-plus"></iconify-icon>
+                  </a>
+                  <a data-bs-toggle="tooltip" data-bs-placement="left"
+                  data-bs-custom-class="custom-tooltip"
+                  data-bs-title="Add to wish list" href="#" style="--num:1">
+                    <iconify-icon icon="mdi:heart"></iconify-icon>
+                  </a>
+                  <a data-bs-toggle="tooltip" data-bs-placement="left"
+                  data-bs-custom-class="custom-tooltip"
+                  data-bs-title="Open quick view" href="#" style="--num:2">
+                    <iconify-icon icon="mdi:eye"></iconify-icon>
+                  </a>
+                  <a data-bs-toggle="tooltip" data-bs-placement="left"
+                  data-bs-custom-class="custom-tooltip"
+                  data-bs-title="Show rating" href="#" style="--num:3">
+                    <iconify-icon icon="dashicons:chart-bar"></iconify-icon>
+                  </a>
+                </div>
+              </div>
+              <div class="new_arrival_text">
+                <p>$150.65</p>
+                <h4>Lotion Shower Gel</h4>
+                <span><iconify-icon icon="material-symbols:star"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star"></iconify-icon></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Argan Cream Body Butter
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div class="new_arrival_card">
+
+              <div class="new_arrival_img">
+                <a href="#"><img src="./Images/Seller Cream.png" alt=""></a>
+                <div class="sale" style="top:7px;">
+                  <span>Sale</span>
+                </div>
+                <div class="icon_group">
+                  <a data-bs-toggle="tooltip" data-bs-placement="left"
+                  data-bs-custom-class="custom-tooltip"
+                  data-bs-title="Add to cart" href="#" style="--num:0">
+                    <iconify-icon icon="la:cart-plus"></iconify-icon>
+                  </a>
+                  <a data-bs-toggle="tooltip" data-bs-placement="left"
+                  data-bs-custom-class="custom-tooltip"
+                  data-bs-title="Add to wish list" href="#" style="--num:1">
+                    <iconify-icon icon="mdi:heart"></iconify-icon>
+                  </a>
+                  <a data-bs-toggle="tooltip" data-bs-placement="left"
+                  data-bs-custom-class="custom-tooltip"
+                  data-bs-title="Open quick view" href="#" style="--num:2">
+                    <iconify-icon icon="mdi:eye"></iconify-icon>
+                  </a>
+                  <a data-bs-toggle="tooltip" data-bs-placement="left"
+                  data-bs-custom-class="custom-tooltip"
+                  data-bs-title="Show rating" href="#" style="--num:3">
+                    <iconify-icon icon="dashicons:chart-bar"></iconify-icon>
+                  </a>
+      
+                </div>
+              </div>
+              <div class="new_arrival_text">
+                <p>$250.65</p>
+                <h4>Argan Cream Body Butter</h4>
+                <span><iconify-icon icon="material-symbols:star"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star"></iconify-icon></span>
+      
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Compact Face Powder
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div class="new_arrival_card">
+
+              <div class="new_arrival_img">
+                <a href="#"><img src="./Images/Seller face powder.png" alt=""></a>
+                <div class="icon_group">
+                  <a data-bs-toggle="tooltip" data-bs-placement="left"
+                  data-bs-custom-class="custom-tooltip"
+                  data-bs-title="Add to cart" href="#" style="--num:0">
+                    <iconify-icon icon="la:cart-plus"></iconify-icon>
+                  </a>
+                  <a data-bs-toggle="tooltip" data-bs-placement="left"
+                  data-bs-custom-class="custom-tooltip"
+                  data-bs-title="Add to wish list" href="#" style="--num:1">
+                    <iconify-icon icon="mdi:heart"></iconify-icon>
+                  </a>
+                  <a data-bs-toggle="tooltip" data-bs-placement="left"
+                  data-bs-custom-class="custom-tooltip"
+                  data-bs-title="Open quick view" href="#" style="--num:2">
+                    <iconify-icon icon="mdi:eye"></iconify-icon>
+                  </a>
+                  <a data-bs-toggle="tooltip" data-bs-placement="left"
+                  data-bs-custom-class="custom-tooltip"
+                  data-bs-title="Show rating" href="#" style="--num:3">
+                    <iconify-icon icon="dashicons:chart-bar"></iconify-icon>
+                  </a>
+      
+                </div>
+              </div>
+              <div class="new_arrival_text">
+                <p>$175.65</p>
+                <h4>Compact Face Powder</h4>
+                <span><iconify-icon icon="material-symbols:star"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star"></iconify-icon></span>
+      
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+            Manicure Gel nails, makeup
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div class="new_arrival_card">
+
+              <div class="new_arrival_img">
+                <a href="#"><img src="./Images/Seller nail.png" alt=""></a>
+                <div class="sale">
+                  <span>New</span>
+                </div>
+                <div class="icon_group">
+                  <a data-bs-toggle="tooltip" data-bs-placement="left"
+                  data-bs-custom-class="custom-tooltip"
+                  data-bs-title="Add to cart" href="#" style="--num:0">
+                    <iconify-icon icon="la:cart-plus"></iconify-icon>
+                  </a>
+                  <a data-bs-toggle="tooltip" data-bs-placement="left"
+                  data-bs-custom-class="custom-tooltip"
+                  data-bs-title="Add to wish list" href="#" style="--num:1">
+                    <iconify-icon icon="mdi:heart"></iconify-icon>
+                  </a>
+                  <a data-bs-toggle="tooltip" data-bs-placement="left"
+                  data-bs-custom-class="custom-tooltip"
+                  data-bs-title="Open quick view" href="#" style="--num:2">
+                    <iconify-icon icon="mdi:eye"></iconify-icon>
+                  </a>
+                  <a data-bs-toggle="tooltip" data-bs-placement="left"
+                  data-bs-custom-class="custom-tooltip"
+                  data-bs-title="Show rating" href="#" style="--num:3">
+                    <iconify-icon icon="dashicons:chart-bar"></iconify-icon>
+                  </a>
+      
+                </div>
+              </div>
+              <div class="new_arrival_text">
+                <p>$75.65</p>
+                <h4>Manicure Gel nails, makeup</h4>
+                <span><iconify-icon icon="material-symbols:star"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star"></iconify-icon></span>
+      
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+            Perfumes s, Orlane Paris
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div class="new_arrival_card">
+              <div class="new_arrival_img">
+                <a href="#"><img src="./Images/Perfume.png" alt=""></a>
+                <div class="sale">
+                  <span>-45%</span>
+                </div>
+                <div class="icon_group">
+                  <a data-bs-toggle="tooltip" data-bs-placement="left"
+                  data-bs-custom-class="custom-tooltip"
+                  data-bs-title="Add to cart" href="#" style="--num:0">
+                    <iconify-icon icon="la:cart-plus"></iconify-icon>
+                  </a>
+                  <a data-bs-toggle="tooltip" data-bs-placement="left"
+                  data-bs-custom-class="custom-tooltip"
+                  data-bs-title="Add to wish list" href="#" style="--num:1">
+                    <iconify-icon icon="mdi:heart"></iconify-icon>
+                  </a>
+                  <a data-bs-toggle="tooltip" data-bs-placement="left"
+                  data-bs-custom-class="custom-tooltip"
+                  data-bs-title="Open quick view" href="#" style="--num:2">
+                    <iconify-icon icon="mdi:eye"></iconify-icon>
+                  </a>
+                  <a data-bs-toggle="tooltip" data-bs-placement="left"
+                  data-bs-custom-class="custom-tooltip"
+                  data-bs-title="Show rating" href="#" style="--num:3">
+                    <iconify-icon icon="dashicons:chart-bar"></iconify-icon>
+                  </a>
+                </div>
+              </div>
+              <div class="new_arrival_text">
+                <p>$350.65</p>
+                <h4>Perfumes s, Orlane Paris</h4>
+                <span><iconify-icon icon="material-symbols:star"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star"></iconify-icon></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+            Natural skin care Cleanser
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="new_arrival_card">
+
+            <div class="new_arrival_img">
+              <a href="#"><img src="./Images/Cleanser.png" alt=""></a>
+              <div class="sale" style="top:7px;">
+                <span>Sale</span>
+              </div>
+              <div class="icon_group">
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Add to cart" href="#" style="--num:0">
+                  <iconify-icon icon="la:cart-plus"></iconify-icon>
+                </a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Add to wish list" href="#" style="--num:1">
+                  <iconify-icon icon="mdi:heart"></iconify-icon>
+                </a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Open quick view" href="#" style="--num:2">
+                  <iconify-icon icon="mdi:eye"></iconify-icon>
+                </a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Show rating" href="#" style="--num:3">
+                  <iconify-icon icon="dashicons:chart-bar"></iconify-icon>
+                </a>
+    
+              </div>
+            </div>
+            <div class="new_arrival_text">
+              <p>$460.65</p>
+              <h4>Natural skin care Cleanser</h4>
+              <span><iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon></span>
+    
+            </div>
+    
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
+            Argan oil Hair conditioner
+          </button>
+        </h2>
+        <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="new_arrival_card">
+
+            <div class="new_arrival_img">
+              <a href="#"><img src="./Images/Conditioner.png" alt=""></a>
+              <div class="icon_group">
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Add to cart" href="#" style="--num:0">
+                  <iconify-icon icon="la:cart-plus"></iconify-icon>
+                </a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Add to wish list" href="#" style="--num:1">
+                  <iconify-icon icon="mdi:heart"></iconify-icon>
+                </a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Open quick view" href="#" style="--num:2">
+                  <iconify-icon icon="mdi:eye"></iconify-icon>
+                </a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Show rating" href="#" style="--num:3">
+                  <iconify-icon icon="dashicons:chart-bar"></iconify-icon>
+                </a>
+    
+              </div>
+            </div>
+            <div class="new_arrival_text">
+              <p>$320.65</p>
+              <h4>Argan oil Hair conditioner</h4>
+              <span><iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon></span>
+    
+            </div>
+    
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Lip balm Oriflame Cream
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="new_arrival_card">
+
+            <div class="new_arrival_img">
+              <a href="#"><img src="./Images/Lip balm.png" alt=""></a>
+              <div class="sale">
+                <span>New</span>
+              </div>
+              <div class="icon_group">
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Add to cart" href="#" style="--num:0">
+                  <iconify-icon icon="la:cart-plus"></iconify-icon>
+                </a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Add to wish list" href="#" style="--num:1">
+                  <iconify-icon icon="mdi:heart"></iconify-icon>
+                </a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Open quick view" href="#" style="--num:2">
+                  <iconify-icon icon="mdi:eye"></iconify-icon>
+                </a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Show rating" href="#" style="--num:3">
+                  <iconify-icon icon="dashicons:chart-bar"></iconify-icon>
+                </a>
+    
+              </div>
+            </div>
+            <div class="new_arrival_text">
+              <p>$185.65</p>
+              <h4>Lip balm Oriflame Cream</h4>
+              <span><iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon>
+                <iconify-icon icon="material-symbols:star"></iconify-icon></span>
+    
+            </div>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="shopBtn">
+      <a href="#">See All Products <span> <iconify-icon icon="ph:arrow-right"></iconify-icon> </span> </a>
+    </div>
+  </div>
+</section>
+<!-- For sm device ends here -->
+
+<!-- BEST SELLER SECTION ENDS HERE -->
+
+<!--DEALS SECTION STARTS HERE -->
+<section id="deals">
+  <h3 class="heading">Deals Of The Day</h3>
+    <div class="container">
+      <div class="deal_cntnt">
+        <div class="timer">
+          <ul>
+            <li>
+              <h4 class="days">20</h4>
+              <p>Days</p>
+            </li>
+            <li>
+              <h4 class="hours">16</h4>
+              <p>Hours</p>
+            </li>
+            <li>
+              <h4 class="mins">13</h4>
+              <p>Minutes</p>
+            </li>
+            <li>
+              <h4 class="secs">30</h4>
+              <p>Seconds</p>
+            </li>
+          </ul>
+        </div>
+          <div class="deal_card_slide">
+              
+                <div class="dealCard ">
+                  <div class="dealCardText col-lg-8">
+                    <h6>Fairness Cream</h6>
+                    <h3>Get Up To 35% Off</h3>
+                    <p>Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+                    <h5>$256.35</h5>
+                    <h5 style="text-decoration: line-through; color: #444;">$356.35</h5>
+                  </div>
+                  <div class="shopBtn">
+                    <a href="#">Shop Now <span><iconify-icon icon="ph:arrow-right"></iconify-icon></span></a>
+                  </div>
+                </div>
+                <div class="dealCard">
+                  <div class="dealCardText col-lg-8">
+                    <h6>Body Lotions</h6>
+                    <h3>Get Up To 35% Off</h3>
+                    <p>Credibly empower visionary leadership skills and 24/7 functionalities. Uniquely whiteboard equity invested.</p>
+                    <h5>$256.35</h5>
+                    <h5 style="text-decoration: line-through; color: #444;">$356.35</h5>
+                  </div>
+                  <div class="shopBtn">
+                    <a  href="#">Shop Now <span><iconify-icon icon="ph:arrow-right"></iconify-icon></span></a>
+                  </div>
+                </div>
+                <div class="dealCard ">
+                  <div class="dealCardText col-lg-8">
+                    <h6>Fairness Cream</h6>
+                    <h3>Get Up To 35% Off</h3>
+                    <p>Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+                    <h5>$256.35</h5>
+                    <h5 style="text-decoration: line-through; color: #444;">$356.35</h5>
+                  </div>
+                  <div class="shopBtn">
+                    <a href="#">Shop Now <span><iconify-icon icon="ph:arrow-right"></iconify-icon></span></a>
+                  </div>
+                </div>
+                <div class="dealCard">
+                  <div class="dealCardText col-lg-8">
+                    <h6>Body Lotions</h6>
+                    <h3>Get Up To 35% Off</h3>
+                    <p>Credibly empower visionary leadership skills and 24/7 functionalities. Uniquely whiteboard equity invested.</p>
+                    <h5>$256.35</h5>
+                    <h5 style="text-decoration: line-through; color: #444;">$356.35</h5>
+                  </div>
+                  <div class="shopBtn">
+                    <a  href="#">Shop Now <span><iconify-icon icon="ph:arrow-right"></iconify-icon></span></a>
+                  </div>
+                </div>
+
+                
+            </div>
+          </div>
+      </div>
+    </div>
+</section>
+
+<!--DEALS SECTION ENDS HERE -->
+
+<!-- SPECIAL OFFER SECTION STARTS HERE -->
+<section id="specialOffer">
+  <div class="container">
+    <div class="row">
+      <div class="specialOfferText col-lg-5">
+        <p>SPECIAL OFFER</p>
+        <h3>Beauty Inspired by Real Shine In Life</h3>
+        <p>Completely grow maintainable niches via tactical services. Progressively synthesize market positioning paradigms for functional architectures. Professionally aggregate.</p>
+        <div class="exploreBtn">
+          <a href="#">Explore More <span> <iconify-icon icon="ph:arrow-right"></iconify-icon> </span></a>
+        </div>
+      </div>
+      <div class="specialOfferVideo col-lg-7">
+        <div class="video"><img src="./Images/Special offer video.png" alt="">
+          <div class="overlay">
+            <a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/otej7WLdPh0">
+              <span>
+                <iconify-icon icon="gg:play-button" style="font-size: 24px;"></iconify-icon>
+              </span>
+            </a>
+      </div>
+    </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- SPECIAL OFFER SECTION ENDS HERE -->
+
+<!-- LATEST NEWS SECTION STARTS HERE -->
+<section id="latestNews">
+  <h3>Latest News</h3>
+   <div class="container">
+       <div class="latest_slider">
+         <div class="latest_card ">
+
+           <div class="latest_img">
+             <a href="#"><img src="./Images/Lotion.jpg" alt=""></a>
+           </div>
+           <div class="latest_text">
+             <a href="#">
+               <h5>Best multi-step Beauty skin.</h5>
+             </a>
+             <p>Appropriately seize 24/365 markets without adaptive.</p>
+             <a href="#">Read more <span> <iconify-icon icon="ph:arrow-right"></iconify-icon> </span></a>
+             <span>
+               <p>Jan 04, 2022</p>
+             </span>
+
+           </div>
+
+         </div>
+         <div class="latest_card ">
+
+          <div class="latest_img">
+            <a href="#"><img src="./Images/Argan Cream.jpg" alt=""></a>
+          </div>
+          <div class="latest_text">
+            <a href="#">
+              <h5>Herbal treatment for dry scal.</h5>
+            </a>
+            <p>Appropriately seize 24/365 markets without adaptive.</p>
+            <a href="#">Read more <span><iconify-icon icon="ph:arrow-right"></iconify-icon> </span></a>
+            <span>
+              <p>Jan 04, 2022</p>
+            </span>
+
+          </div>
+
+        </div>
+        <div class="latest_card ">
+
+          <div class="latest_img">
+            <a href="#"><img src="./Images/gel nails.png" alt=""></a>
+          </div>
+          <div class="latest_text">
+            <a href="#">
+              <h5>Traveling Solo Is Awesome.</h5>
+            </a>
+            <p>Appropriately seize 24/365 markets without adaptive.</p>
+            <a href="#">Read more <span> <iconify-icon icon="ph:arrow-right"></iconify-icon> </span></a>
+            <span>
+              <p>Jan 04, 2022</p>
+            </span>
+
+          </div>
+
+        </div>
+        <div class="latest_card ">
+
+          <div class="latest_img">
+            <a href="#"><img src="./Images/Face Powder.jpg" alt=""></a>
+          </div>
+          <div class="latest_text">
+            <a href="#">
+              <h5>A Beautiful Sunday Morning.</h5>
+            </a>
+            <p>Appropriately seize 24/365 markets without adaptive.</p>
+            <a href="#">Read more <span> <iconify-icon icon="ph:arrow-right"></iconify-icon> </span></a>
+            <span>
+              <p>Jan 04, 2022</p>
+            </span>
+
+          </div>
+
+        </div>
+        <div class="latest_card ">
+
+           <div class="latest_img">
+             <a href="#"><img src="./Images/Lotion.jpg" alt=""></a>
+           </div>
+           <div class="latest_text">
+             <a href="#">
+               <h5>Best multi-step Beauty skin.</h5>
+             </a>
+             <p>Appropriately seize 24/365 markets without adaptive.</p>
+             <a href="#">Read more <span> <iconify-icon icon="ph:arrow-right"></iconify-icon> </span></a>
+             <span>
+               <p>Jan 04, 2022</p>
+             </span>
+
+           </div>
+
+         </div>
+         <div class="latest_card ">
+
+          <div class="latest_img">
+            <a href="#"><img src="./Images/Argan Cream.jpg" alt=""></a>
+          </div>
+          <div class="latest_text">
+            <a href="#">
+              <h5>Herbal treatment for dry scal.</h5>
+            </a>
+            <p>Appropriately seize 24/365 markets without adaptive.</p>
+            <a href="#">Read more <span> <iconify-icon icon="ph:arrow-right"></iconify-icon> </span></a>
+            <span>
+              <p>Jan 04, 2022</p>
+            </span>
+
+          </div>
+
+        </div>
+        <div class="latest_card ">
+
+          <div class="latest_img">
+            <a href="#"><img src="./Images/gel nails.png" alt=""></a>
+          </div>
+          <div class="latest_text">
+            <a href="#">
+              <h5>Traveling Solo Is Awesome.</h5>
+            </a>
+            <p>Appropriately seize 24/365 markets without adaptive.</p>
+            <a href="#">Read more <span> <iconify-icon icon="ph:arrow-right"></iconify-icon> </span></a>
+            <span>
+              <p>Jan 04, 2022</p>
+            </span>
+
+          </div>
+
+        </div>
+        <div class="latest_card ">
+
+          <div class="latest_img">
+            <a href="#"><img src="./Images/Face Powder.jpg" alt=""></a>
+          </div>
+          <div class="latest_text">
+            <a href="#">
+              <h5>A Beautiful Sunday Morning.</h5>
+            </a>
+            <p>Appropriately seize 24/365 markets without adaptive.</p>
+            <a href="#">Read more <span> <iconify-icon icon="ph:arrow-right"></iconify-icon> </span></a>
+            <span>
+              <p>Jan 04, 2022</p>
+            </span>
+
+          </div>
+
+        </div>
+           
+       </div>
+
+   </div>
+</section>
+
+<!--LATEST NEWS SECTION ENDS HERE -->
+
+<!--FOOTER SECTION STARTS HERE -->
+<!-- Footer for md to xxl device starts -->
+<footer id="mdFooter" class="d-sm-none d-md-block">
+  <div class="container">
+    <div class="footerHead">
+      <div class="row">
+        <div class="footHead col-3">
+          <ul>
+            <li><div class="list_icon"><img src="./Images/delivery-truck .png" alt=""></div></li>
+            <li>
+              <h5>FREE SHIPING</h5>
+              <p>all orders over <span style="color: #FF6F61;">$150</span></p>
+            </li>
+          </ul>
+        </div>
+        <div class="footHead col-3">
+          <ul>
+            <li><div class="list_icon"><img src="./Images/credit-card.png" alt=""></div></li>
+            <li>
+              <h5>QUICK PAYMENT</h5>
+              <p>100% secure payment</p>
+            </li>
+          </ul>
+        </div>
+        <div class="footHead col-3">
+          <ul>
+            <li><div class="list_icon"><img src="./Images/exchange.png" alt=""></div></li>
+            <li>
+              <h5>FREE RETURNS</h5>
+              <p>Return money within 30 days</p>
+            </li>
+          </ul>
+        </div>
+        <div class="footHead col-3">
+          <ul style="border: none;">
+            <li><div class="list_icon"><img src="./Images/customer-service.png" alt=""></div></li>
+            <li>
+              <h5>24/7 SUPPORT</h5>
+              <p>Quick Support</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer_menu">
+      <div class="row align-items-center">
+        <div class="footerSocial col-5">
+          <a href="#"><iconify-icon icon="ri:facebook-fill"></iconify-icon></a>
+          <a href="#"><iconify-icon icon="mdi:twitter"></iconify-icon></a>
+          <a href="#"><iconify-icon icon="mdi:instagram"></iconify-icon></a>
+          <a href="#"><iconify-icon icon="formkit:pinterest"></iconify-icon></a>
+        </div>
+        <div class="footerLogo col-2">
+          <a href="#"><img src="./Images/Footer_Logo.png" alt=""></a>
+        </div>
+        <div class="footerPayment col-5">
+          <a href="#"><img src="./Images/Credit Cards.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer_cntnt">
+      <div class="row">
+        <div class="myAC col-lg-2 col-md-4">
+          <h4>My Account</h4>
+          <ul>
+            <li><a href="#"><iconify-icon icon="ep:arrow-right"></iconify-icon> My Account </a></li>
+            <li><a href="./cart.html"><iconify-icon icon="ep:arrow-right"></iconify-icon> View Cart </a></li>
+            <li><a href="#"><iconify-icon icon="ep:arrow-right"></iconify-icon> Wishlist</a></li>
+            <li><a href="./Compare.html"><iconify-icon icon="ep:arrow-right"></iconify-icon>Compare </a></li>
+            <li><a href="./ShopPage.html"><iconify-icon icon="ep:arrow-right"></iconify-icon>New Products </a></li>
+          </ul>
+        </div>
+        <div class="support col-lg-2 col-md-4">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#"><iconify-icon icon="ep:arrow-right"></iconify-icon>Help</a></li>
+            <li><a href="#"><iconify-icon icon="ep:arrow-right"></iconify-icon> Contacts </a></li>
+            <li><a href="#"><iconify-icon icon="ep:arrow-right"></iconify-icon> Feedback</a></li>
+            <li><a href="#"><iconify-icon icon="ep:arrow-right"></iconify-icon>Customer Service</a></li>
+            <li><a href="#"><iconify-icon icon="ep:arrow-right"></iconify-icon>Store Locations</a></li>
+          </ul>
+        </div>
+        <div class="oppening col-lg-2 col-md-4">
+          <h4>Openning Time</h4>
+          <div class="weeks">
+              <ul>
+                <li>Mon-Tue:</li>
+                <li>Wed:</li>
+                <li>Fri:</li>
+                <li>Sat:</li>
+                <li>Sun:</li>
+              </ul>
+              <div class="time">
+                <ul>
+                  <li>8AM - 10PM</li>
+                  <li>8AM - 7PM</li>
+                  <li>7AM - 12PM</li>
+                  <li>9AM - 8PM</li>
+                  <li>Closed</li>
+                </ul>
+              </div>
+          </div>
+        </div>
+        <div class="contact col-lg-3 col-md-6">
+          <h4>Contact Us</h4>
+          <ul>
+            <li>
+              <span>
+              <iconify-icon icon="mdi:location"></iconify-icon>
+            </span>
+            830 Broad way, New York, NY 10003, United States
+            </li>
+            <li>
+              <span>
+              <iconify-icon icon="mdi:telephone"></iconify-icon>
+            </span>
+            <a href="tel:+18008660286">+18008660286</a>
+          </li>
+            <li>
+              <span>
+              <iconify-icon icon="ic:baseline-email"></iconify-icon>
+            </span>
+            <a href="mailto:aetor.info@gmail.com">aetor.info@gmail.com</a> <br>
+            <a href="mailto:info@aetor.com">info@aetor.com</a>
+          </li>
+          </ul>
+        </div>
+        <div class="news col-lg-3 col-md-6">
+          <h4>News Letter</h4>
+          <p>Authoritatively morph 24/7 potentialities with error-free partnerships.</p>
+          <form action="">
+            <input type="text"placeholder="Enter your email...."> <button>Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Footer for md to xxl device ends here -->
+
+<!-- Footer for sm device starts -->
+<footer id="smFooter" class="d-sm-block d-md-none">
+<div class="container">
+  <div class="row align-items-center">
+    <div class="services col-4">
+      <ul>
+          <li><a href="#" data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Free Shipping"><img src="./Images/delivery-truck .png" alt=""></a></li>
+        <li><a href="#" data-bs-toggle="tooltip" data-bs-placement="top"
+          data-bs-custom-class="custom-tooltip"
+          data-bs-title="Quick Payment"><img src="./Images/credit-card.png" alt=""></a></li>
+        <li><a href="#" data-bs-toggle="tooltip" data-bs-placement="top"
+          data-bs-custom-class="custom-tooltip"
+          data-bs-title="Free Returns"><img src="./Images/exchange.png" alt=""><img src="" alt=""></a></li>
+        <li><a href="#" data-bs-toggle="tooltip" data-bs-placement="top"
+          data-bs-custom-class="custom-tooltip"
+          data-bs-title="24/7 Support"><img src="./Images/customer-service.png" alt=""></a></li>
+      </ul>
+    </div>
+    <div class="logo col-4 text-center">
+      <img src="./Images/Footer_Logo.png" alt="">
+    </div>
+    <div class="payment col-4">
+      <img src="./Images/Credit Cards.png" alt="">
+    </div>
+
+  </div>
+  <div class="footer_cntnt">
+    <div class="row">
+      <div class="myAC col-6">
+        <h4>My Account</h4>
+        <ul>
+          <li><a href="#"><iconify-icon icon="ep:arrow-right"></iconify-icon> My Account </a></li>
+          <li><a href="./cart.html"><iconify-icon icon="ep:arrow-right"></iconify-icon> View Cart </a></li>
+          <li><a href="#"><iconify-icon icon="ep:arrow-right"></iconify-icon> Wishlist</a></li>
+          <li><a href="./Compare.html"><iconify-icon icon="ep:arrow-right"></iconify-icon>Compare </a></li>
+          <li><a href="./ShopPage.html"><iconify-icon icon="ep:arrow-right"></iconify-icon>New Products </a></li>
+        </ul>
+      </div>
+      <div class="support col-6">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#"><iconify-icon icon="ep:arrow-right"></iconify-icon>Help</a></li>
+          <li><a href="#"><iconify-icon icon="ep:arrow-right"></iconify-icon> Contacts </a></li>
+          <li><a href="#"><iconify-icon icon="ep:arrow-right"></iconify-icon> Feedback</a></li>
+          <li><a href="#"><iconify-icon icon="ep:arrow-right"></iconify-icon>Customer Service</a></li>
+          <li><a href="#"><iconify-icon icon="ep:arrow-right"></iconify-icon>Store Locations</a></li>
+        </ul>
+      </div>
+      <div class="oppening col-6">
+        <h4>Openning Time</h4>
+        <div class="weeks">
+            <ul>
+              <li>Mon-Tue:</li>
+              <li>Wed:</li>
+              <li>Fri:</li>
+              <li>Sat:</li>
+              <li>Sun:</li>
+            </ul>
+            <div class="time">
+              <ul>
+                <li>8AM - 10PM</li>
+                <li>8AM - 7PM</li>
+                <li>7AM - 12PM</li>
+                <li>9AM - 8PM</li>
+                <li>Closed</li>
+              </ul>
+            </div>
+        </div>
+      </div>
+      <div class="contact col-6">
+        <h4>Contact Us</h4>
+        <ul>
+          <li>
+            <span>
+            <iconify-icon icon="mdi:location"></iconify-icon>
+          </span>
+          830 Broad way, New York, NY 10003, United States
+          </li>
+          <li>
+            <span>
+            <iconify-icon icon="mdi:telephone"></iconify-icon>
+          </span>
+          <a href="tel:+18008660286">+18008660286</a>
+        </li>
+          <li>
+            <span>
+            <iconify-icon icon="ic:baseline-email"></iconify-icon>
+          </span>
+          <a href="mailto:aetor.info@gmail.com">aetor.info@gmail.com</a> <br>
+          <a href="mailto:info@aetor.com">info@aetor.com</a>
+        </li>
+        </ul>
+      </div>
+      <div class="news col-sm-12 col-12">
+        <h4>News Letter</h4>
+        <p>Authoritatively morph 24/7 potentialities with error-free partnerships.</p>
+        <form action="">
+          <input type="text"placeholder="Enter your email...."> <button>Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</footer>
+<!-- Footer for sm device ends -->
+
+<!--FOOTER SECTION ENDS HERE -->
+<!-- COPYRIGHT SECTION STARTS HERE -->
+<section id="copyright">
+  <p>© 2022 All Rights Reserved <span>Aytor</span> By <span>Angfuzsoft.</span></p>
+</section>
+<!-- COPYRIGHT SECTION ENDS HERE -->
+<!-- HOME PAGE ENDS HERE -->
+
+    <!-- ALL JS LINKS START -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="./Javascript/slick.min.js"></script>
+    <script src="./Javascript/venobox.min.js"></script>
+    <script src="./Javascript/jquery.countdown.min.js"></script>
+    <script src="./Javascript/main.js"></script>
+   
+    <!-- ALL JS LINKS END -->
+</body>
+</html>
